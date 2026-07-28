@@ -1,0 +1,10 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+find_dependency(CURL)
+if(@RDP_SDK_ENABLE_WDM@)
+    find_dependency(Protobuf CONFIG)
+    find_dependency(gRPC CONFIG)
+endif()
+
+include("${CMAKE_CURRENT_LIST_DIR}/RdpSdkCppTargets.cmake")
