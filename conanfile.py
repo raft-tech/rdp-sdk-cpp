@@ -28,6 +28,7 @@ class RdpSdkCppConan(ConanFile):
         "tests/*",
         "examples/*",
         "LICENSE",
+        "TERMS_OF_USE.md",
         "README.md",
     )
 

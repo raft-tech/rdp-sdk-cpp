@@ -114,6 +114,11 @@ install(
 install(DIRECTORY include/ DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}")
 
 install(
+    FILES LICENSE TERMS_OF_USE.md
+    DESTINATION "${CMAKE_INSTALL_DATADIR}/licenses/rdp-sdk-cpp"
+)
+
+install(
     EXPORT RdpSdkCppTargets
     NAMESPACE Rdp::
     FILE RdpSdkCppTargets.cmake
